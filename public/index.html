@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Restaurant Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/bundle.js"></script> 
+</head>
+<body>
+    <h1>Add New Review:</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" >Restaurant Name</label>
+          <input type="text" id="name" required/>
+        </div>
+        <div class="form-item">
+          <label for="city">City</label>
+          <input type="text" id="city" required/>
+        </div>
+        <div class="form-item">
+          <label for="rating">Rating</label>
+          <select id="rating">
+            <option value="" disabled selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class = "form-item">
+            <label for = "recommend">Would you reccomend?</label>
+            <select id ="recommend">
+                <option value="" disabled selected></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>   
+            </select>
+        </div>
+      </div>
+      <input id = "save-button" type="submit" value="Save"/>
+    </form>
+
+    <h1>Restaurant List</h1>
+    <ul id="restaurant-list"></ul>
+    <form id ="delete-all">
+      <input id = "delete" type="submit" value="Delete All"/>
+    </form>
+  </body>
+
+</html>
+

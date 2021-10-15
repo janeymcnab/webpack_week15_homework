@@ -1,0 +1,46 @@
+*{
+    font-family:'Courier New', Courier, monospace
+    
+  }
+  
+  #restaurant-list{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  
+  #form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .form-item{
+    padding: 20px;
+  }
+  
+  li {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(211, 189, 206);
+  }
+  
+  h1{
+    margin: 20px;
+    text-decoration: underline;
+  }
+  
+  #save-button{
+    margin: 20px;
+  }
+  
+  #delete-all{
+    margin: 20px;
+  }
+  
+  
+  body{
+    background:rgb(223, 208, 222); 
+  }
